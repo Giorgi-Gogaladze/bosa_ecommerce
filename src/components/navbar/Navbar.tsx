@@ -1,5 +1,6 @@
 import React from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
+import { IoSearch } from "react-icons/io5";
 
 function Navbar() {
   return (
@@ -20,7 +21,17 @@ function Navbar() {
                     </ul>
                 </div>
             </nav>
-            <div>search </div>
+            <div className='h-full w-full flex items-center border-r border-gray-200'>
+                <input type="text" placeholder='Search products...' className='ml-4 text-[0.8rem]  focus:outline-none'/>
+                <select className='border-0 bg-gray-50 h-8 text-[0.8rem] w-32 tracking-wide pl-3'>
+                    <option value="">All Categories</option>
+                    <option value="">Electronics</option>
+                    <option value="">Gadgets</option>
+                </select>
+                <div className='ml-4'>
+                    <button className='cursor-pointer'><IoSearch /></button>
+                </div>
+            </div>
         </div>
     </section>
   )

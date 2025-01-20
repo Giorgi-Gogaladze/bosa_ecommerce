@@ -16,7 +16,7 @@ function Header() {
         <div>
           <Image src='/images/ad.jpg' alt='advertisement' width={519} height={75}/>
         </div>
-      <div className='w-32 h-26 flex justify-between items-center p-1'>
+      <div className='w-36 h-26 flex justify-between items-center p-2'>
         <div><FaCodeCompare /></div>
         <div><FaRegHeart /></div>
         <div><FaRegUser /></div>
