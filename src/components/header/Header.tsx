@@ -8,7 +8,7 @@ import Navbar from '../navbar/Navbar';
 function Header() {
   return (
 <>
-  <section className="h-26 w-full border border-gray-200 py-4 px-[6.5rem]">
+  <section className="h-26 w-full border border-gray-100 py-4 px-[6.5rem]">
     <div className=' flex justify-between'>
         <div className='h-full'>
           <Image src='/images/logo.png' alt='logo image' height={50} width={160} layout='intrinsic'/>
