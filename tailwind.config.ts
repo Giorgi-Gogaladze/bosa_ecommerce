@@ -10,6 +10,8 @@ export default {
     extend: {
       colors: {
         darkgray: '#565656',
+        infogray:'#9e9e9e',
+        newArrivals: '#302f2f',
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
