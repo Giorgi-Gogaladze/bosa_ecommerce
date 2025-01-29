@@ -16,7 +16,7 @@ function page() {
   return (
   <section className='px-[6.5rem] mt-8 flex'>
       <aside>
-        <div className='w-[15rem] h-[24.5rem]'>
+        <div className='w-[15rem] h-[24rem]'>
           <div className='mr-[2.5rem] w-full h-full border border-gray-100'>
             <div className='bg-darkgray flex items-center justify-center h-[3rem] text-white text-base'>Popular Catogories</div>
             <div className='flex flex-col justify-between p-6 gap-5'>
@@ -33,11 +33,96 @@ function page() {
           </div>
         </div>
 
+        <div className='w-[15rem] h-auto border border-gray-100 mt-4 relative'>
+          <div className='overflow-hidden'>
+            <Image src='/images/aside-camera-image.jpg' alt='ad image' width={3000} height={4500} className='object-cover object-center w-full h-full '/>
+            <div className='absolute top-10 left-0 flex mx-5 w-full h-[80px] gap-4'>
+              <div className='flex flex-col items-center gap-[1px] relative '>
+                <h4 className='font-sans font-semibold text-darkgray'>New.Product</h4>
+                <p className=' absolute left-4 top-2 text-bigtext font-bold text-[50px]  py-0 '>4K</p>
+                <p className='font-sans text-gray-700 tracking-wide mt-9'>cameras</p>
+              </div>
+              <div>
+                <div className='absolute top-3'>
+                  <p className='text-[14px] text-gray-600'>Starting at</p>
+                  <span className='text-[20px] text-bigtext mr-[5px]'>$</span><span className='text-[35px] font-bold text-gray-600'>85.99</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
         <div className='w-[15rem] h-90 border border-gray-100 mt-4 bg-gradient-to-b from-white via-white to-gray-50 flex flex-col items-center py-[0.5rem]'>
           <Image src='/images/tv_image.jpg' alt='Product image' width={190} height={190} className='w-48 h-48' />
           <div className='flex flex-col items-center px-[1.5rem] mt-4'>
             <p className='capitalize'>Save up to $600 on select big-screen TVs.</p>
             <button className='mt-[0.7rem] bg-black text-white font-sans text-[0.6rem] font-semibold w-20 h-8 focus:cursor-pointer'>Shop Now</button>
+          </div>
+        </div>
+
+        <div className='w-[15rem] h-auto mt-4'>
+          <div className='mr-[2.5rem] w-full h-full border border-gray-100'>
+            <div className='bg-darkgray flex items-center justify-center h-[3rem] text-white text-base'>SHOP BY BRAND</div>
+            <div className='w-full h-[55px] flex items-center justify-center p-2  border-b'>
+              <div className='flex w-[10rem] justify-between items-center'>
+                <div>
+                  <Image width={60} height={10} src='/images/nokia.png' alt='nokia'></Image>
+                </div>
+                <div className='text-xs font-bold'>
+                  Nokia Shop
+                </div>
+              </div>
+            </div>
+            <div className='w-full h-[55px] flex items-center justify-center p-2  border-b'>
+              <div className='flex w-[10rem] justify-between items-center'>
+                <div>
+                  <Image width={60} height={10} src='/images/canon.png' alt='nokia'></Image>
+                </div>
+                <div className='text-xs font-bold'>
+                   Canon Shop
+                </div>
+              </div>
+            </div>
+            <div className='w-full h-[55px] flex items-center justify-center p-2  border-b'>
+              <div className='flex w-[10rem] justify-between items-center'>
+                <div>
+                  <Image width={60} height={10} src='/images/samsung.png' alt='nokia'></Image>
+                </div>
+                <div className='text-xs font-bold'>
+                  Samsung Shop
+                </div>
+              </div>
+            </div>
+            <div className='w-full h-[55px] flex items-center justify-center p-2  border-b'>
+              <div className='flex w-[10rem] justify-between items-center'>
+                <div>
+                  <Image width={60} height={10} src='/images/apple.png' alt='nokia'></Image>
+                </div>
+                <div className='text-xs font-bold'>
+                  Apple Shop
+                </div>
+              </div>
+            </div>
+            <div className='w-full h-[55px] flex items-center justify-center p-2  border-b'>
+              <div className='flex w-[10rem] justify-between items-center'>
+                <div>
+                  <Image width={60} height={10} src='/images/htc.png' alt='nokia'></Image>
+                </div>
+                <div className='text-xs font-bold'>
+                  H.T.C Shop
+                </div>
+              </div>
+            </div>
+            <div className='w-full h-[55px] flex items-center justify-center p-2  border-b'>
+              <div className='flex w-[10rem] justify-between items-center'>
+                <div>
+                  <Image width={60} height={10} src='/images/lg.png' alt='nokia'></Image>
+                </div>
+                <div className='text-xs font-bold'>
+                  L.G Shop
+                </div>
+              </div>
+            </div>
           </div>
         </div>
     </aside>

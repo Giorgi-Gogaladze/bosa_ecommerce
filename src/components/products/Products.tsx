@@ -1,5 +1,6 @@
 import React from 'react'
 import Image from 'next/image';
+import { NewArr } from '../new-arrivals/NewArr';
 
 export const Products = () => {
   return (
@@ -23,6 +24,7 @@ export const Products = () => {
                 <div className='border-y border-gray-400 h-[3px]'></div>
             </div>
         </div>
+        <NewArr />
     </section>
   )
 }

@@ -9,6 +9,7 @@ export default {
   theme: {
     extend: {
       colors: {
+        bigtext: '#EB5A3E',
         darkgray: '#565656',
         infogray:'#9e9e9e',
         newArrivals: '#302f2f',
