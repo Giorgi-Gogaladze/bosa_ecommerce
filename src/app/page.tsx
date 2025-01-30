@@ -11,9 +11,11 @@ import { FaGift } from "react-icons/fa";
 import { GiReturnArrow } from "react-icons/gi";
 import { FaPhoneAlt } from "react-icons/fa";
 import Image from 'next/image';
+import Blogs from '@/components/blogs/Blogs';
 
 function page() {
   return (
+<>  
   <section className='px-[6.5rem] mt-8 flex'>
       <aside>
         <div className='w-[15rem] h-[24rem]'>
@@ -167,8 +169,9 @@ function page() {
         <Products />
       </div>
     </main>
-
   </section>
+    <Blogs />
+  </>  
   )
 }
 
