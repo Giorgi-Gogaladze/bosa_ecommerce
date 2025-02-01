@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react'
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoSearch } from "react-icons/io5";
@@ -12,12 +13,11 @@ function Navbar() {
                 </div>
                 <div className='h-11 w-[32rem] flex items-center border-r border-gray-100'>
                     <ul className='flex items-center space-x-[1.5rem] text-xs font-bold text-darkgray pl-8 pr-32'>
-                        <li>Home</li>
-                        <li>AboutUs</li>
-                        <li>Pages</li>
-                        <li>Blog</li>
-                        <li>Shop</li>
-                        <li>Contact</li>
+                        <Link href='/'><li>Home</li></Link>
+                        <Link href='about'><li>AboutUs</li></Link>
+                        <Link href='blogs'><li>Blog</li></Link>
+                        <Link href='shop'><li>Shop</li></Link>
+                        <Link href='contact'><li>Contact</li></Link>
                     </ul>
                 </div>
             </nav>

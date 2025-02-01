@@ -9,6 +9,8 @@ export default {
   theme: {
     extend: {
       colors: {
+        footercol: '#f4f4f4',
+        ftrbtmcol: '#eeeaea',
         headercol: '#333333',
         bigtext: '#EB5A3E',
         darkgray: '#565656',
