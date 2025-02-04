@@ -30,10 +30,12 @@ const page = () => {
             <div><CountUP /></div> 
         </div>
 
-        <div className='px-[6.5rem] w-full h-auto'>
-            <div className='flex' >
-                <div className='w-[23rem]'>
-                    <div className='h-auto w-full flex flex-col gap-3 shadow-lg p-7 mt-7'>
+        <div className='px-[6.5rem] w-full h-auto relative mb-[5rem]'>
+            <div className='flex justify-center z-0 w-full'>
+                <Image src='/images/about-camera.jpg' alt='camera' width={450} height={414}></Image>
+            </div>
+                <div className='w-[21rem] absolute top-0'>
+                    <div className='h-auto w-full flex flex-col gap-3 shadow-lg p-7 mt-7 bg-white'>
                         <div>
                             <h1 className='text-[25px] text-headercol font-semibold font-sans'>Our Vision...</h1>
                         </div>
@@ -43,11 +45,8 @@ const page = () => {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <Image src='/images/about-camera.jpg' alt='camera' width={500} height={460}></Image>
-                </div>
-                <div className='w-[23rem]'>
-                    <div className='h-auto w-full flex flex-col gap-3 shadow-lg p-7 mt-14'>
+                <div className='w-[21rem] absolute top-0 right-[6.5rem]'>
+                    <div className='h-auto w-full flex flex-col gap-3 shadow-lg p-7 mt-14 bg-white'>
                         <div>
                             <h1 className='text-[25px] text-headercol font-semibold font-sans'>Our Mission...</h1>
                         </div>
@@ -58,8 +57,6 @@ const page = () => {
                     </div>
                 </div>   
             </div>
-        </div>
-
     </section>
   )
 }
