@@ -13,11 +13,11 @@ function Navbar() {
                 </div>
                 <div className='h-11 w-[32rem] flex items-center border-r border-gray-100'>
                     <ul className='flex items-center space-x-[1.5rem] text-xs font-bold text-darkgray pl-8 pr-32'>
-                        <Link href='/'><li>Home</li></Link>
-                        <Link href='about'><li>AboutUs</li></Link>
-                        <Link href='blogs'><li>Blog</li></Link>
-                        <Link href='shop'><li>Shop</li></Link>
-                        <Link href='contact'><li>Contact</li></Link>
+                        <Link href='/'><li className='hover:text-blue-400'>Home</li></Link>
+                        <Link href='about'><li className='hover:text-blue-400'>AboutUs</li></Link>
+                        <Link href='blogs'><li className='hover:text-blue-400'>Blog</li></Link>
+                        <Link href='shop'><li  className='hover:text-blue-400'>Shop</li></Link>
+                        <Link href='contact'><li className='hover:text-blue-400'>Contact</li></Link>
                     </ul>
                 </div>
             </nav>

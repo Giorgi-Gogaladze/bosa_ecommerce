@@ -10,7 +10,7 @@ const Footer = () => {
   return (
     <section className='flex flex-col'>
       <div className='w-full h-auto bg-footercol py-[3rem] px-[6.5rem]'>
-        <div className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6'>
+        <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
           <div className='flex flex-col gap-5 py-2'>
             <Image src='/images/logo.png' alt='logo' width={160} height={50}></Image>
             <p className='text-headercol font-sans'>Habitant aut esse, autem voluptatem facilisis, veritatis! Porro minim nec, est morbi sociis duip.</p>

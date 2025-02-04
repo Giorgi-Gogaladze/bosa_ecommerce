@@ -11,7 +11,7 @@ function Header() {
   <section className="h-26 w-full border border-gray-100 py-4 px-[6.5rem]">
     <div className=' flex justify-between'>
         <div className='h-full'>
-          <Image src='/images/logo.png' alt='logo image' height={50} width={160} layout='intrinsic'/>
+          <Image src='/images/logo.png' alt='logo image' height={50} width={160} />
         </div>
         <div>
           <Image src='/images/ad.jpg' alt='advertisement' width={519} height={75}/>

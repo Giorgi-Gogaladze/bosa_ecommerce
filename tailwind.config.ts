@@ -16,6 +16,7 @@ export default {
         darkgray: '#565656',
         infogray:'#9e9e9e',
         newArrivals: '#302f2f',
+        creamy: '#f5f4f7',
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
