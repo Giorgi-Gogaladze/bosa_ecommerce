@@ -3,10 +3,11 @@ import Image from 'next/image'
 import React from 'react'
 
 const FeaturedPosts = () => {
+  console.log(blogs)
   return (
   <section className='px-[15px]'>
       <div className='lg:px-[6rem] sm:px-[2rem] md:px-[4rem] w-full h-auto mt-8'>
-        <div className='flex justify-center'>
+        <div className='flex justify-center mb-5'>
             <div className='flex flex-col items-center gap-3 mb-3'>
                 <h1 className='font-sans sm:text-[24px] md:text-[28px] lg:text-[36px] font-medium traching-[1.2]'>Featured Posts</h1>
                 <div className='bg-orange-500 w-[60px] h-[1px]'></div>
