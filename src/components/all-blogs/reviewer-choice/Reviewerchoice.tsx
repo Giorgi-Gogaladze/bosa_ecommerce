@@ -1,8 +1,9 @@
 import blogs from '@/utilities/blogs'
 import Image from 'next/image'
 import React from 'react'
+import { FaCalendar, FaRegComments, FaUser } from 'react-icons/fa6'
 
-const Reviewerchoice = () => {
+const Reviewerchoice:React.FC = () => {
   return (
     <main>
         <article className='flex justify-center'>
@@ -21,8 +22,18 @@ const Reviewerchoice = () => {
 
                         <div className='absolute bottom-4 left-4 text-white'>
                             <span className="bg-red-500 text-xs px-2 py-1">{blog.title}</span>
-                            <h1 className="text-[18px] tracking-[1.4] font-sans cursor-pointer hover:text-blue-300">{blog.comment}</h1>
-                            <p className="text-sm">📅 {blog.date} • 👤 Demoteam • 💬 0</p>
+                            <h1 className="text-[18px] tracking-[1.4] font-sans cursor-pointer hover:text-blue-300">
+                                <div className="inline-flex space-x-1 text-[12px] items-center">
+                                    <FaCalendar className="text-white" />
+                                    <span>{blog.date}</span>
+                            
+                                    <FaUser className="text-white" />
+                                    <span>Demoteam</span>
+                            
+                                    <FaRegComments className="text-white" />
+                                    <span>{blog.coms}</span>
+                                </div>
+                            </h1>
                         </div>
                     </div>))}
 
@@ -35,9 +46,19 @@ const Reviewerchoice = () => {
 
                                 <div className='absolute bottom-4 left-4 text-white'>
                                     <span className="bg-red-500 text-xs px-2 py-1">{blog.title}</span>
-                                    <h1 className="text-[18px] tracking-[1.4] font-sans cursor-pointer hover:text-blue-300">{blog.comment}</h1>
-                                    <p className="text-sm">📅 {blog.date} • 👤 Demoteam • 💬 0</p>
+                                    <h1 className="text-[18px] tracking-[1.4] font-sans cursor-pointer hover:text-blue-300">
+                                <div className="inline-flex text-[12px] space-x-1 items-center">
+                                    <FaCalendar className="text-white" />
+                                    <span>{blog.date}</span>
+                            
+                                    <FaUser className="text-white" />
+                                    <span>Demoteam</span>
+                            
+                                    <FaRegComments className="text-white" />
+                                    <span>0</span>
                                 </div>
+                            </h1>
+                        </div>
                             </div>
                         ))}
                     </div> 

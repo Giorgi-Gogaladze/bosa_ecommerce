@@ -3,7 +3,7 @@ import { FaCodeCompare } from "react-icons/fa6";
 import { FaRegHeart } from "react-icons/fa";
 import { FaRegUser } from "react-icons/fa";
 import { MdOutlineAddShoppingCart } from "react-icons/md";
-import Navbar from '../navbar/Navbar';
+import Navbar from './navbar/Navbar';
 
 function Header() {
   return (

@@ -3,7 +3,6 @@ import Image from 'next/image'
 import React from 'react'
 
 const FeaturedPosts = () => {
-  console.log(blogs)
   return (
   <section className='px-[15px]'>
       <div className='lg:px-[6rem] sm:px-[2rem] md:px-[4rem] w-full h-auto mt-8'>

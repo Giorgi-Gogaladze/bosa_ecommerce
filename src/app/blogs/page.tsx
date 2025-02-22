@@ -1,7 +1,8 @@
 'use client'
-import BlogSlider from '@/components/blog-slider/BlogSlider';
-import FeaturedPosts from '@/components/featured-posts/FeaturedPosts';
-import Reviewerchoice from '@/components/reviewer-choice/Reviewerchoice';
+import BlogSlider from '@/components/all-blogs/blog-slider/BlogSlider';
+import FeaturedPosts from '@/components/all-blogs/featured-posts/FeaturedPosts';
+import RecentPosts from '@/components/all-blogs/recent-posts/RecentPosts';
+import Reviewerchoice from '@/components/all-blogs/reviewer-choice/Reviewerchoice';
 import React from 'react';
 const page = () => {
 
@@ -10,6 +11,7 @@ const page = () => {
       <BlogSlider />
       <FeaturedPosts />
       <Reviewerchoice />
+      <RecentPosts />
     </main>
   )
 }

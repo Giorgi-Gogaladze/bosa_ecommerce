@@ -11,7 +11,7 @@ import { FaGift } from "react-icons/fa";
 import { GiReturnArrow } from "react-icons/gi";
 import { FaPhoneAlt } from "react-icons/fa";
 import Image from 'next/image';
-import Blogs from '@/components/blogs/Blogs';
+import Blogs from '@/components/all-blogs/blogs/Blogs';
 
 function page() {
   return (
