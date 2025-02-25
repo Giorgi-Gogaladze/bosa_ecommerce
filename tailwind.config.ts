@@ -8,6 +8,9 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        jost: ['Jost', 'sans-serif'],
+      },
       colors: {
         footercol: '#f4f4f4',
         ftrbtmcol: '#eeeaea',
@@ -19,6 +22,7 @@ export default {
         creamy: '#f5f4f7',
         background: "var(--background)",
         foreground: "var(--foreground)",
+        hovercol: '#086abd'
       },
     },
   },

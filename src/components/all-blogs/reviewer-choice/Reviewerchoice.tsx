@@ -15,7 +15,8 @@ const Reviewerchoice:React.FC = () => {
         <section className='lg:px-[6.5rem] md:px-[4rem] sm:px-[2rem] w-full'>
             <div className = 'grid lg:grid-cols-5 md:grid-cols-1 gap-6 min-h-[500px] w-full'>
                     {blogs.slice(0, 1).map((blog) => (
-                    <div key={blog.title} className='lg:col-span-2  sm:w-full overflow-hidden relative'> {/*///////////  */}
+                    <div key={blog.title} className='lg:col-span-2  sm:w-full overflow-hidden relative'>
+                        
                         <Image src='/images/blog1.jpg' alt='image' width={768} height={512} className='object-cover h-full w-full'/>
                     
                         <div className='absolute inset-0 bg-black/50'></div>

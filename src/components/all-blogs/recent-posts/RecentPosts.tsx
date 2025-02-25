@@ -3,10 +3,12 @@ import blogs from '@/utilities/blogs'
 import Image from 'next/image';
 import { FaCalendar,  FaRegCommentDots,   FaUser } from 'react-icons/fa6';
 import { FaCalendarAlt } from 'react-icons/fa';
+import Link from 'next/link'
 
 const RecentPostss:React.FC = () => {
 
   const twoblogs = blogs.slice(1, 3);
+  const fourblogs = blogs.slice(1, 5);
   return (
     <main className='lg:px-[6.5rem] md:px-[4rem] sm:px-[2rem] w-full'>
         <article className='flex justify-start mt-7 mb-3'>
@@ -15,8 +17,10 @@ const RecentPostss:React.FC = () => {
                 <div className='bg-orange-500 w-[60px] h-[2px]'></div>
             </div>
         </article>
+
         <section className='w-full h-auto flex flex-col gap-6 lg:flex-row'>
-          <div className='flex flex-col lg:flex-row gap-4 w-full '>
+          <div className='mb-8'>
+          <div className='flex flex-col lg:flex-row gap-4 w-full mb-14'>
           {twoblogs.map((blog) => (
             <div key={blog.title} className='flex flex-col gap-3 w-full lg:w-[340px]' >
               <div className="flex flex-col gap-3 w-full lg:w-[340px] ">
@@ -49,6 +53,27 @@ const RecentPostss:React.FC = () => {
           ))}
           </div>
 
+          <article className='mb-7'>
+            <div className='w-full h-auto grid grid-cols-1 grid-rows-4 gap-4 sm:grid-cols-2 sm:grid-rows-2 md:grid-cols-2 md:grid-rows-2 lg:grid-cols-2 lg:grid-rows-2'>
+              {fourblogs.map((blog) => (
+                <div key={blog.title} className='flex flex-row gap-4 sm:w-full'>
+                  <div className='w-[92px] h-[88px] overflow-hidden'>
+                    <Image src={blog.image} alt='image' width={100} height={100} className='w-full h-full object-cover object-center '></Image>
+                  </div>
+                  <div className='pt-2 '>
+                    <h1 className="text-[12px] text-red-600 cursor-pointer underline">{blog.title}</h1>
+                    <p className='font-jost'>{blog.something}</p>
+                    <div className='inline-flex space-x-2'>
+                      <FaCalendar className="text-red-500 text-xs" />
+                      <span className="mr-[35px] text-[12px] font-semibold">{blog.date}</span>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </article>
+          </div>
+          
           <aside className='w-full relative'>
             <div className='flex flex-row items-center gap-2 absolute top-[-60px] left-[90px]'>
               <div className='w-[30px] h-[1px] bg-infogray'></div>
@@ -76,6 +101,13 @@ const RecentPostss:React.FC = () => {
                     </div>
                   </div>
               ))}
+            </div>
+            <div className='flex flex-row justify-center my-8 '>
+              <div className='w-[160px] h-[50px] overflow-hidden'>
+              <Link href='/' >
+                <Image className='w-full h-full object-cover ' src='/images/logo.png' alt='logo' width={1200} height={300}></Image>
+              </Link>
+              </div>
             </div>
           </aside>
         </section>
