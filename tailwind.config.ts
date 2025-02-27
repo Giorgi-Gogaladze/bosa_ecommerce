@@ -10,6 +10,7 @@ export default {
     extend: {
       fontFamily: {
         jost: ['Jost', 'sans-serif'],
+        poppins: ['Poppins', 'sans-serif'],
       },
       colors: {
         headingcolor: '#414141',
@@ -24,8 +25,10 @@ export default {
         creamy: '#f5f4f7',
         background: "var(--background)",
         foreground: "var(--foreground)",
-        hovercol: '#086abd',
+        hovercol: '#0056b3',
         cardcolor: '#e9e6ed',
+        whitebg:'#f7f7f7',
+
       },
     },
   },
