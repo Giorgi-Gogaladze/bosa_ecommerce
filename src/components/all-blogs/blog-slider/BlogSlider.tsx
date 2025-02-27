@@ -7,15 +7,18 @@ import { SlArrowLeft } from "react-icons/sl";
 
 
 const BlogSlider:React.FC = () => {
-  const [currentIndex, setCurrnetIndex] = useState<number>(0);
-
+  const [currentIndex, setCurrentIndex] = useState<number>(0);
+  const blogsfor = blogs.slice(0, 4);
+  
   const nextSlide = () => {
-    setCurrnetIndex((prevIndex) => (prevIndex + 1) % blogsfor.length)
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % blogsfor.length)
   }
   const prevSlide = () => {
-    setCurrnetIndex((prevIndex) => (prevIndex -1)% blogsfor.length)
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + blogsfor.length) % blogsfor.length);
   }
-  const blogsfor = blogs.slice(0, 4);
+  const circleIndex = (index:number) => {
+      setCurrentIndex(index)
+  }
 
   return (
     <section className='h-auto w-full overflow-hidden relative'>
@@ -27,16 +30,22 @@ const BlogSlider:React.FC = () => {
               </div>
             ))}
         </div>
-          <button 
-          className='absolute right-5 top-1/2 transform  -translate-y-4'
-          onClick={nextSlide}
-          ><SlArrowRight className='text-white sm:text-[20px] md:text-[30px] lg:text-[45px]' />
+          <button className='absolute right-5 top-1/2 transform  -translate-y-4'
+            onClick={nextSlide}>
+            <SlArrowRight className='text-white sm:text-[20px] md:text-[30px] lg:text-[45px]' />
           </button> 
-          <button 
-          className='absolute left-5 top-1/2 transform  -translate-y-4 '
-          onClick={prevSlide}
-          ><SlArrowLeft className='text-white  sm:text-[20px] md:text-[30px] lg:text-[45px]'/>
+          <button className='absolute left-5 top-1/2 transform  -translate-y-4 '
+            onClick={prevSlide}>
+            <SlArrowLeft className='text-white  sm:text-[20px] md:text-[30px] lg:text-[45px]'/>
           </button>
+        <div className='absolute bottom-2 right-0 left-0'>
+            <div className="flex items-center justify-center gap-2">
+              {blogsfor.map((_, index) => (
+                <div onClick={() => circleIndex(index)} key={index} className={`transition-all w-3 h-3 cursor-pointer bg-white rounded-full ${currentIndex == index ? 'p-2' : 'bg-opacity-50' } `}>
+                </div>
+              ))}
+            </div>
+        </div>
       </section> 
   )
 }

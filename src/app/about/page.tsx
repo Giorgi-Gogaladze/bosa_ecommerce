@@ -1,4 +1,5 @@
 import CountUP from '@/components/countUp/CountUp'
+import Introduction from '@/components/IntroductionComponent/Introduction'
 import VideoModal from '@/components/videoModal/VideoModal'
 import Image from 'next/image'
 import React from 'react'
@@ -7,15 +8,7 @@ const page = () => {
 
   return (
     <section className='w-full h-auto'>
-        <main className='px-[6.5rem] h-[300px]  bg-creamy flex justify-between'>
-            <div className='h-full w-[1rem] flex items-center'>
-                <h1 className='text-[4rem] font-bold'>INTRODUCTION</h1>
-            </div>
-            <div className='overflow-hidden'>
-                <Image src='/images/about-introduction.png' alt='image' width={900} height={765} className=' object-cover object-center w-full h-full'></Image>
-            </div>
-        </main>
-
+        <Introduction />
         <div className='px-[6.5rem] grid grid-cols-2 gap-4 w-full h-[500px] my-16 py-4 relative'>
             <div className='flex flex-col gap-6'>
                 <div>

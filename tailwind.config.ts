@@ -12,9 +12,11 @@ export default {
         jost: ['Jost', 'sans-serif'],
       },
       colors: {
+        headingcolor: '#414141',
         footercol: '#f4f4f4',
         ftrbtmcol: '#eeeaea',
         headercol: '#333333',
+        basictext:'#565656',
         bigtext: '#EB5A3E',
         darkgray: '#565656',
         infogray:'#9e9e9e',
@@ -22,7 +24,8 @@ export default {
         creamy: '#f5f4f7',
         background: "var(--background)",
         foreground: "var(--foreground)",
-        hovercol: '#086abd'
+        hovercol: '#086abd',
+        cardcolor: '#e9e6ed',
       },
     },
   },

@@ -13,18 +13,18 @@ const Footer = () => {
         <div className='grid grid-cols-1 lg:grid-cols-3 gap-6'>
           <div className='flex flex-col gap-5 py-2'>
             <Image src='/images/logo.png' alt='logo' width={160} height={50}></Image>
-            <p className='text-headercol font-sans'>Habitant aut esse, autem voluptatem facilisis, veritatis! Porro minim nec, est morbi sociis duip.</p>
+            <p className='text-headercol font-jost'>Habitant aut esse, autem voluptatem facilisis, veritatis! Porro minim nec, est morbi sociis duip.</p>
           </div>
           <div className='flex flex-col gap-4 px-5'>
             <h2 className='text-xl'>Usefull Links</h2>
-            <ul className='font-sans text-headercol '>
-              <li>My Account</li>
-              <li>Product Wishlist</li>
-              <li>Cart Page</li>
-              <li>Shop Page</li>
+            <ul className='font-jost text-headercol'>
+              <li className=' hover:text-blue-300 cursor-pointer'>My Account</li>
+              <li className=' hover:text-blue-300 cursor-pointer'>Product Wishlist</li>
+              <li className=' hover:text-blue-300 cursor-pointer'>Cart Page</li>
+              <li className=' hover:text-blue-300 cursor-pointer'>Shop Page</li>
             </ul>
           </div>
-          <div className='font-sans text-headercol flex flex-col gap-2'>
+          <div className='font-jost text-headercol flex flex-col gap-2'>
             <h1 className='text-xl font-bold'>Contact Info</h1>
             <p >Feel free to contact & reach us !</p>
             <p>Address : 22th Street, Colorado
