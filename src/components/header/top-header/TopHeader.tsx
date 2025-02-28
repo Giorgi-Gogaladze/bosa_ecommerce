@@ -1,9 +1,10 @@
 'use client'
 import React, { useState } from 'react'
-import { BiAlignRight } from 'react-icons/bi'
-import { FaFacebook, FaInstagram, FaLinkedin, FaPinterest, FaTwitter } from 'react-icons/fa'
 import { GiHamburgerMenu } from 'react-icons/gi'
 import { IoIosCloseCircleOutline } from 'react-icons/io'
+import MediaIcons from './MediaIcons'
+import { FaCodeCompare, FaRegHeart, FaRegUser } from 'react-icons/fa6'
+import { MdOutlineAddShoppingCart } from 'react-icons/md'
 
 const TopHeader = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -14,26 +15,19 @@ const TopHeader = () => {
 
 
   return (
-    <section className='w-full'> 
+    <section className='w-full h-11 border flex items-center justify-between border-b-gray-100 px-[6.5rem]' >
+        <div className='hidden lg:w-full lg:flex lg:justify-between lg:items-center'>
+          <ul className='flex items-center gap-5 text-headercol text-[13px] font-poppins leading-[1.5] font-normal tracking-[1.5]'>
+            <li className='cursor-pointer hover:text-hovercol'>My Account</li>
+            <li className='cursor-pointer hover:text-hovercol'>Whishlist</li>
+            <li className='cursor-pointer hover:text-hovercol'>Checkout</li>
+            <li className='cursor-pointer hover:text-hovercol'>Cart</li>
+          </ul>
+        </div>
+        <div> 
+          <section className='w-full'> 
         <div className='flex justify-between items-center'>
-            <ul className='hidden lg:flex gap-4'>
-                <a href="https://blank.page/" target='blank'>
-                    <li><FaFacebook  className='text-[14px] cursor-pointer hover:text-hovercol'/></li>
-                </a>
-                <a href="https://blank.page/" target='blank'>
-                    <li><FaTwitter className='text-[14px] cursor-pointer hover:text-hovercol'/></li>
-                </a>
-                <a href="https://blank.page/" target='blank'>
-                    <li><FaInstagram className='text-[14px] cursor-pointer hover:text-hovercol'/></li>
-                </a>
-                <a href="https://blank.page/" target='blank'>
-                    <li><FaPinterest className='text-[14px] cursor-pointer hover:text-hovercol'/></li>
-                </a>
-                <a href="https://blank.page/" target='blank'>
-                    <li><FaLinkedin className='text-[14px] cursor-pointer hover:text-hovercol'/></li>
-                </a>
-                <li onClick={sideToggle}><BiAlignRight  className='text-[16px] cursor-pointer hover:text-hovercol' /></li>
-            </ul>
+            <MediaIcons sideToggle={sideToggle} />
         </div>
 
         <div className='flex items-center justify-center w-full gap-3 lg:hidden'>
@@ -42,7 +36,6 @@ const TopHeader = () => {
             className='text-[16px] hover:text-hovercol cursor-pointer font-semibold' />
             <span className="text-[15px] font-normal font-poppins leading-6 text-headercol uppercase">TOP MENU</span>
         </div>
-
 
         { isOpen && (
             <div 
@@ -62,27 +55,19 @@ const TopHeader = () => {
                 <div className='border-b border-gray-400'><a href="#">Gadgets</a></div>
             </div>
             <div className='mt-[2rem] p-6 bg-white gap-4'>
-            <ul className='hidden lg:flex gap-4'>
-                <a href="https://blank.page/" target='blank'>
-                    <li><FaFacebook  className='text-[14px] cursor-pointer hover:text-hovercol'/></li>
-                </a>
-                <a href="https://blank.page/" target='blank'>
-                    <li><FaTwitter className='text-[14px] cursor-pointer hover:text-hovercol'/></li>
-                </a>
-                <a href="https://blank.page/" target='blank'>
-                    <li><FaInstagram className='text-[14px] cursor-pointer hover:text-hovercol'/></li>
-                </a>
-                <a href="https://blank.page/" target='blank'>
-                    <li><FaPinterest className='text-[14px] cursor-pointer hover:text-hovercol'/></li>
-                </a>
-                <a href="https://blank.page/" target='blank'>
-                    <li><FaLinkedin className='text-[14px] cursor-pointer hover:text-hovercol'/></li>
-                </a>
-                <li onClick={sideToggle}><BiAlignRight  className='text-[16px] cursor-pointer hover:text-hovercol' /></li>
-            </ul>
+                <MediaIcons  sideToggle={sideToggle}/>
+            </div>
+            <div className='mt-[2rem] w-full h-[50px] flex justify-between items-center p-6  bg-white'>
+              <div className='cursor-pointer hover:text-hovercol'><FaCodeCompare /></div>
+              <div className='cursor-pointer hover:text-hovercol'><FaRegHeart /></div>
+              <div className='cursor-pointer hover:text-hovercol'><FaRegUser /></div>
+              <div className='cursor-pointer hover:text-hovercol'><MdOutlineAddShoppingCart /></div>
             </div>
         </div>
     </section>   
+        </div>
+      </section>
+    
   )
 }
 
