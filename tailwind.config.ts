@@ -28,6 +28,8 @@ export default {
         hovercol: '#0056b3',
         cardcolor: '#e9e6ed',
         whitebg:'#f7f7f7',
+        bluetext: '#086abd',
+        lightblack: '#383838',
 
       },
     },

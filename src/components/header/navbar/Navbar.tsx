@@ -44,7 +44,7 @@ function Navbar() {
         </div>
         <div className='lg:hidden h-full flex items-center justify-center '>
             <div className='w-auto cursor-pointer flex hover:text-hovercol' onClick={toggleMenu}>
-                { menuOpen ? (<TfiAlignJustify  className='text-[24px] font-semibold '/>) : (<IoClose className='text-[24px] font-semibold '/>)}
+                { menuOpen ? (<IoClose className='text-[24px] font-semibold '/>) : (<TfiAlignJustify  className='text-[24px] font-semibold '/>)}
                 <span className='ml-1 text-[18px] text-jost font-normal'>MENU</span>
             </div>
         </div>

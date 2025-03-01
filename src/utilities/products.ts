@@ -1,8 +1,19 @@
-const products = [
+type Prods = {
+id:number
+name:string
+rating:number
+price: number
+quantity:number
+images: string[]
+thumbnail:string
+categories:string[]
+description:string
+}
+const products:Prods[] = [
   {
     id: 1,
-    name: "Apple MacBook Pro 14",
-    rating: 4.8,
+    name: "MacBook Pro 14",
+    rating: 2.8,
     price: 2499.99,
     quantity: 15,
     images: [
@@ -16,8 +27,8 @@ const products = [
   },
   {
     id: 2,
-    name: "Samsung Galaxy S23 Ultra",
-    rating: 4.7,
+    name: "Galaxy S23 Ultra",
+    rating: 1.7,
     price: 1199.99,
     quantity: 30,
     images: [
@@ -31,8 +42,8 @@ const products = [
   },
   {
     id: 3,
-    name: "Sony WH-1000XM5 Headphones",
-    rating: 4.9,
+    name: "Sony Headphones",
+    rating: 3.9,
     price: 399.99,
     quantity: 50,
     images: [
@@ -62,7 +73,7 @@ const products = [
   {
     id: 5,
     name: "Marshall Major V",
-    rating: 4.5,
+    rating: 3.5,
     price: 129.99,
     quantity: 100,
     images: [
@@ -75,8 +86,8 @@ const products = [
   },
   {
     id: 6,
-    name: "Canon EOS R6 Camera",
-    rating: 4.8,
+    name: "Canon EOS R6",
+    rating: 2.8,
     price: 2499.99,
     quantity: 10,
     images: [
@@ -89,8 +100,8 @@ const products = [
   },
   {
     id: 7,
-    name: "Bose SoundLink Mini II",
-    rating: 4.7,
+    name: "Bose SoundLink",
+    rating: 1.7,
     price: 199.99,
     quantity: 40,
     images: [
@@ -104,7 +115,7 @@ const products = [
   },
   {
     id: 8,
-    name: "Apple Watch Series 8",
+    name: "Apple Watch",
     rating: 4.9,
     price: 429.99,
     quantity: 25,
