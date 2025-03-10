@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { FaCalendar,  FaRegCommentDots,   FaUser } from 'react-icons/fa6';
 import { FaCalendarAlt } from 'react-icons/fa';
 import Link from 'next/link'
+import Heading from '@/components/heading/Heading';
 
 const RecentPostss:React.FC = () => {
 
@@ -13,8 +14,8 @@ const RecentPostss:React.FC = () => {
     <main className='lg:px-[6.5rem] md:px-[4rem] sm:px-[2rem] w-full'>
         <article className='flex justify-start mt-7 mb-3'>
             <div className='flex flex-col items-start gap-3 mb-7'>
-                <h1 className='font-sans sm:text-[20px] md:text-[24px] lg:text-[30px] font-medium traching-[1.2]'>Reacent Posts</h1>
-                <div className='bg-orange-500 w-[60px] h-[2px]'></div>
+              <h1 className='font-sans sm:text-[20px] md:text-[24px] lg:text-[30px] font-medium traching-[1.2]'>Reacent Posts</h1>
+            <div className='bg-orange-500 w-[60px] h-[2px]'></div>
             </div>
         </article>
 
@@ -75,11 +76,7 @@ const RecentPostss:React.FC = () => {
           </div>
           
           <aside className='w-full relative'>
-            <div className='flex flex-row items-center gap-2 absolute top-[-60px] left-[90px]'>
-              <div className='w-[30px] h-[1px] bg-infogray'></div>
-              <div className='text-[14px] font-sans font-semibold'>RECENT POSTS</div>
-              <div className='w-[30px] h-[1px] bg-infogray'></div>
-            </div>
+            <Heading headingText={'REACENT POSTS '} />
             <div className='w-full h-auto'>
               {blogs.map((blog) => (
                   <div key={blog.title} className='w-full first:pt-0  py-4 border-b-[1px] border-gray-300 flex flex-row gap-4'>
